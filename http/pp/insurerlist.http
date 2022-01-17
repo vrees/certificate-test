@@ -1,0 +1,3 @@
+# Vorversicherer
+GET https://praemienrechner-vvg-test.atupri.ch/ajax/proxy/getinsurerlist/?language=D&date=2022/01/13
+Authorization: Basic {{username-test}} {{password-test}}

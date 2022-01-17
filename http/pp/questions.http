@@ -1,0 +1,3 @@
+# Gesundheitsfragen
+GET https://praemienrechner-vvg-test.atupri.ch/ajax/proxy/getquestion?geschlecht=M&geburtsdatum=1980-08-08&beginndatum=2022-02-01&tarifliste=SMC_62_19_5_1_1_1_0_0_0_0;MIX_26_200_22_1_1_62_0_193_0_0&sprache=D
+Authorization: Basic {{username-test}} {{password-test}}

@@ -1,0 +1,17 @@
+### Webapp ruft diese Url aus dem Browser auf heraus
+GET https://praemienrechner-vvg-test.atupri.ch/ajax/proxy/getplz/?plz=5600&mode=1&praemienjahr=2017
+Authorization: Basic {{username-test}} {{password-test}}
+
+### VPN aktivieren
+GET https://srvscs1-test.atupri.ch:9980/services/secon.svc/GetPlz?praemienjahr=2017&plz=5600&mode=1
+
+### direkter Secon Aufruf - VPN darf nicht aktiv sein
+GET https://webapps.atupri.ch/Services/Secon.svc/GetPlz?PraemienJahr=2017&PLZ=5600&Mode=1
+
+####
+GET https://com1-int.atupri.ch:9980/services/secon.svc/GetPlz?praemienjahr=2017&plz=5600&mode=1
+# SSH: Nur mit gültigen Unic-Credentials und über Unic-VPN - kann ich nicht testen
+
+###
+GET https://srvscs1-test.atupri.ch:9960/communities/v1?year=2017&zip=5600&mode=1
+

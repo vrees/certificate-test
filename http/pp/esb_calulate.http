@@ -1,0 +1,47 @@
+POST https://srvscs1-test.atupri.ch:9960/pr/v1/calculate
+
+{
+    "source": "P",
+    "promotion": "Praemienrechner",
+    "language": "D",
+    "street": "Gartenstrasse 3",
+    "zip": "4123",
+    "city": "Dietisberg",
+    "councilId": 2884,
+    "councilName": "Diegten",
+    "phonePrivate": "0315550972",
+    "email": "brr@atupri.ch",
+    "offerId": 1,
+    "familyNumber": 1,
+    "mivitaDiscount": false,
+    "persons": [
+        {
+            "personId": 1,
+            "cardinal": 1,
+            "correspondence": true,
+            "insuranceNumber": 1,
+            "firstName": "@SprintReview",
+            "lastName": "@testBrr",
+            "gender": "M",
+            "birthDate": "1988-01-01",
+            "startDate": "2019-08-01",
+            "nationality": "CH",
+            "previousInsurer": 1560,
+            "dateOfEntry": "2000-01-01",
+            "permitType": "C",
+            "products": [
+                {
+                    "law": "KVG",
+                    "objectId": "HMO_37_9_6_1_1_1_0_0_0_0",
+                    "zsr": "Z024713"
+                },
+                {
+                    "law": "VVG",
+                    "objectID": "MIX_26_200_22_1_1_62_0_0_0_0",
+                }
+            ]
+        }
+    ]
+}
+
+

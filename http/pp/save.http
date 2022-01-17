@@ -1,0 +1,3434 @@
+POST {{protocol}}{{host}}/{{path}}/save/
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+Authorization: Basic {{username-test}} {{password-test}}
+
+{
+  "data": {
+    "id": {
+      "uuid": null
+    },
+    "type": "ownSubmission",
+    "attributes": {
+      "tempId": null,
+      "createdAt": null,
+      "state": "offer",
+      "sessionCategory": "DEFAULT",
+      "source": "UO",
+      "promotion": "Praemienrechner",
+      "privateData": {
+        "onlineSubmission": true,
+        "paymentMultiannual": "1"
+      },
+      "mivitaQuestion": null
+    },
+    "relationships": {
+      "persons": [
+        {
+          "id": "13e4fd78-0987-4db3-a419-e7d817d98aea",
+          "firstname": "Ann",
+          "lastname": "Baum",
+          "gender": "f",
+          "birthdate": "07.07.1992",
+          "zip": "4051",
+          "place": "Basel",
+          "municipalityId": 2701,
+          "municipalityInfo": "Basel",
+          "insuranceStart": "01.02.2022",
+          "street": null,
+          "email": null,
+          "phonePrivate": null,
+          "previousInsurer": null,
+          "nationality": "",
+          "okpEnabled": true,
+          "vvgEnabled": false,
+          "dateOfEntry": "",
+          "permitType": "",
+          "practices": {
+            "_": null
+          },
+          "zipText": "4051+Basel"
+        },
+        {
+          "id": "90a21272-80f7-4912-97f1-f92a9bee794e",
+          "firstname": "Uwe",
+          "lastname": "Baum",
+          "gender": "m",
+          "birthdate": "08.08.1934",
+          "zip": "4051",
+          "place": "Basel",
+          "municipalityId": 2701,
+          "municipalityInfo": "Basel",
+          "insuranceStart": "01.02.2022",
+          "street": null,
+          "email": null,
+          "phonePrivate": null,
+          "previousInsurer": null,
+          "nationality": "",
+          "okpEnabled": true,
+          "vvgEnabled": false,
+          "dateOfEntry": "",
+          "permitType": "",
+          "practices": {
+            "_": null
+          },
+          "zipText": "4051+Basel"
+        }
+      ],
+      "healthQuestions": {
+        "13e4fd78-0987-4db3-a419-e7d817d98aea": {
+          "pristine": false,
+          "ready": false
+        },
+        "90a21272-80f7-4912-97f1-f92a9bee794e": {
+          "pristine": false,
+          "ready": false
+        }
+      },
+      "tariffs": {
+        "13e4fd78-0987-4db3-a419-e7d817d98aea": {
+          "okp": {},
+          "vvg": {}
+        },
+        "90a21272-80f7-4912-97f1-f92a9bee794e": {
+          "okp": {},
+          "vvg": {}
+        }
+      },
+      "basket": {
+        "13e4fd78-0987-4db3-a419-e7d817d98aea": {
+          "okp": [],
+          "vvg": []
+        },
+        "90a21272-80f7-4912-97f1-f92a9bee794e": {
+          "okp": [],
+          "vvg": []
+        }
+      }
+    }
+  },
+  "included": []
+}
+
+
+###
+POST https://praemienrechner-vvg-test.atupri.ch/ajax/save/?token=39397589cc3d1f1c33943245aa058f713224b40df30969
+Accept: */*
+Cache-Control: no-cache
+Content-Type: application/json;charset=UTF-8
+Authorization: Basic {{username-test}} {{password-test}}
+
+{
+  "data": {
+    "id": {
+      "uuid": "39397589cc3d1f1c33943245aa058f713224b40df30969"
+    },
+    "type": "ownSubmission",
+    "attributes": {
+      "tempId": null,
+      "createdAt": null,
+      "state": "offer",
+      "sessionCategory": "DEFAULT",
+      "source": "UO",
+      "promotion": "Praemienrechner",
+      "privateData": {
+        "onlineSubmission": true,
+        "paymentMultiannual": "1"
+      },
+      "mivitaQuestion": null,
+      "key": 3600221273
+    },
+    "relationships": {
+      "persons": [
+        {
+          "id": "13e4fd78-0987-4db3-a419-e7d817d98aea",
+          "firstname": "Ann",
+          "lastname": "Katrin",
+          "gender": "f",
+          "birthdate": "07.07.1992",
+          "zip": "4051",
+          "place": "Basel",
+          "municipalityId": 2701,
+          "municipalityInfo": "Basel",
+          "insuranceStart": "01.02.2022",
+          "street": null,
+          "email": null,
+          "phonePrivate": null,
+          "previousInsurer": null,
+          "nationality": "",
+          "okpEnabled": true,
+          "vvgEnabled": false,
+          "dateOfEntry": "",
+          "permitType": "",
+          "practices": {
+            "_": null
+          },
+          "zipText": "4051+Basel",
+          "vvgSection": "withMivita",
+          "vvgProductGroups": {
+            "withMivita_2": true
+          }
+        },
+        {
+          "id": "90a21272-80f7-4912-97f1-f92a9bee794e",
+          "firstname": "Uwe",
+          "lastname": "Katrin",
+          "gender": "m",
+          "birthdate": "08.08.1934",
+          "zip": "4051",
+          "place": "Basel",
+          "municipalityId": 2701,
+          "municipalityInfo": "Basel",
+          "insuranceStart": "01.02.2022",
+          "street": null,
+          "email": null,
+          "phonePrivate": null,
+          "previousInsurer": null,
+          "nationality": "",
+          "okpEnabled": true,
+          "vvgEnabled": false,
+          "dateOfEntry": "",
+          "permitType": "",
+          "practices": {
+            "_": null
+          },
+          "zipText": "4051+Basel"
+        }
+      ],
+      "healthQuestions": {
+        "13e4fd78-0987-4db3-a419-e7d817d98aea": {
+          "pristine": false,
+          "ready": false
+        },
+        "90a21272-80f7-4912-97f1-f92a9bee794e": {
+          "pristine": false,
+          "ready": false
+        }
+      },
+      "tariffs": {
+        "13e4fd78-0987-4db3-a419-e7d817d98aea": {
+          "okp": {
+            "productGroups": [
+              {
+                "id": 1,
+                "recommended": false,
+                "sorting": 0,
+                "standalone": true,
+                "value": "OKP"
+              }
+            ],
+            "categories": [
+              {
+                "id": 19,
+                "productGroup": 1,
+                "recommended": true,
+                "sorting": 1,
+                "value": "2500"
+              },
+              {
+                "id": 18,
+                "productGroup": 1,
+                "recommended": false,
+                "sorting": 2,
+                "value": "2000"
+              },
+              {
+                "id": 17,
+                "productGroup": 1,
+                "recommended": false,
+                "sorting": 3,
+                "value": "1500"
+              },
+              {
+                "id": 15,
+                "productGroup": 1,
+                "recommended": false,
+                "sorting": 5,
+                "value": "1000"
+              },
+              {
+                "id": 13,
+                "productGroup": 1,
+                "recommended": false,
+                "sorting": 7,
+                "value": "500"
+              },
+              {
+                "id": 11,
+                "productGroup": 1,
+                "recommended": false,
+                "sorting": 9,
+                "value": "300"
+              }
+            ],
+            "products": [
+              {
+                "categories": [
+                  11,
+                  13,
+                  15,
+                  17,
+                  18,
+                  19
+                ],
+                "gatekeeper": false,
+                "id": "SMC",
+                "productGroup": 1,
+                "recommended": true,
+                "sorting": 0,
+                "type": [
+                  62
+                ],
+                "value": "SMC",
+                "variants": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "categories": [
+                  11,
+                  13,
+                  15,
+                  17,
+                  18,
+                  19
+                ],
+                "gatekeeper": true,
+                "id": "HMO",
+                "productGroup": 1,
+                "recommended": false,
+                "sorting": 0,
+                "type": [
+                  34,
+                  35,
+                  37,
+                  57,
+                  63
+                ],
+                "value": "HMO",
+                "variants": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "categories": [
+                  11,
+                  13,
+                  15,
+                  17,
+                  18,
+                  19
+                ],
+                "gatekeeper": true,
+                "id": "HAS",
+                "productGroup": 1,
+                "recommended": false,
+                "sorting": 0,
+                "type": [
+                  56
+                ],
+                "value": "HAS",
+                "variants": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "categories": [
+                  11,
+                  13,
+                  15,
+                  17,
+                  18,
+                  19
+                ],
+                "gatekeeper": false,
+                "id": "TEL",
+                "productGroup": 1,
+                "recommended": false,
+                "sorting": 0,
+                "type": [
+                  55
+                ],
+                "value": "TEL",
+                "variants": [
+                  5,
+                  6
+                ]
+              },
+              {
+                "categories": [
+                  11,
+                  13,
+                  15,
+                  17,
+                  18,
+                  19
+                ],
+                "gatekeeper": false,
+                "id": "STD",
+                "productGroup": 1,
+                "recommended": false,
+                "sorting": 0,
+                "type": [
+                  1
+                ],
+                "value": "STD",
+                "variants": [
+                  5,
+                  6
+                ]
+              }
+            ],
+            "options": [
+              {
+                "id": 1,
+                "optionPosition": 1,
+                "parents": [
+                  "STD",
+                  "HAS",
+                  "HMO",
+                  "TEL",
+                  "SMC"
+                ],
+                "productGroup": 1,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 2,
+                "parents": [
+                  "STD",
+                  "HAS",
+                  "HMO",
+                  "TEL",
+                  "SMC"
+                ],
+                "productGroup": 1,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 3,
+                "parents": [
+                  "STD",
+                  "HAS",
+                  "HMO",
+                  "TEL",
+                  "SMC"
+                ],
+                "productGroup": 1,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              }
+            ],
+            "variants": [
+              {
+                "id": 5,
+                "productGroup": 1,
+                "recommended": true,
+                "sorting": 2,
+                "value": "ohne+Unfall"
+              },
+              {
+                "id": 6,
+                "productGroup": 1,
+                "recommended": false,
+                "sorting": 1,
+                "value": "mit+Unfall"
+              }
+            ],
+            "rebates": [
+              {
+                "id": 0,
+                "parents": [
+                  "STD",
+                  "HAS",
+                  "HMO",
+                  "TEL",
+                  "SMC"
+                ],
+                "productGroups": [
+                  1
+                ],
+                "rebatePosition": 1,
+                "recommended": true,
+                "value": "Keine"
+              },
+              {
+                "id": 0,
+                "parents": [
+                  "STD",
+                  "HAS",
+                  "HMO",
+                  "TEL",
+                  "SMC"
+                ],
+                "productGroups": [
+                  1
+                ],
+                "rebatePosition": 2,
+                "recommended": true,
+                "value": "Keine"
+              },
+              {
+                "id": 0,
+                "parents": [
+                  "STD",
+                  "HAS",
+                  "HMO",
+                  "TEL",
+                  "SMC"
+                ],
+                "productGroups": [
+                  1
+                ],
+                "rebatePosition": 3,
+                "recommended": true,
+                "value": "Keine"
+              },
+              {
+                "id": 0,
+                "parents": [
+                  "STD",
+                  "HAS",
+                  "HMO",
+                  "TEL",
+                  "SMC"
+                ],
+                "productGroups": [
+                  1
+                ],
+                "rebatePosition": 4,
+                "recommended": true,
+                "value": "Keine"
+              }
+            ],
+            "tariffs": [
+              {
+                "category": 11,
+                "id": "STD_1_11_5_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 579.9,
+                "recommended": false,
+                "type": 1,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "STD_1_11_6_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 610.4,
+                "recommended": false,
+                "type": 1,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "STD_1_13_5_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 568.9,
+                "recommended": false,
+                "type": 1,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "STD_1_13_6_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 598.8,
+                "recommended": false,
+                "type": 1,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "STD_1_15_5_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 541.2,
+                "recommended": false,
+                "type": 1,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "STD_1_15_6_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 569.6,
+                "recommended": false,
+                "type": 1,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "STD_1_17_5_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 513.4,
+                "recommended": false,
+                "type": 1,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "STD_1_17_6_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 540.4,
+                "recommended": false,
+                "type": 1,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "STD_1_18_5_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 485.8,
+                "recommended": false,
+                "type": 1,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "STD_1_18_6_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 511.3,
+                "recommended": false,
+                "type": 1,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "STD_1_19_5_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 458,
+                "recommended": false,
+                "type": 1,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "STD_1_19_6_1_1_1_0_0_0_0",
+                "parent": "STD",
+                "price": 482.1,
+                "recommended": false,
+                "type": 1,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HAS_56_11_5_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 522,
+                "recommended": false,
+                "type": 56,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HAS_56_11_6_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 549.4,
+                "recommended": false,
+                "type": 56,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HAS_56_13_5_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 511,
+                "recommended": false,
+                "type": 56,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HAS_56_13_6_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 537.8,
+                "recommended": false,
+                "type": 56,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HAS_56_15_5_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 483.2,
+                "recommended": false,
+                "type": 56,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HAS_56_15_6_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 508.6,
+                "recommended": false,
+                "type": 56,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HAS_56_17_5_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 455.5,
+                "recommended": false,
+                "type": 56,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HAS_56_17_6_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 479.4,
+                "recommended": false,
+                "type": 56,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HAS_56_18_5_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 427.8,
+                "recommended": false,
+                "type": 56,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HAS_56_18_6_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 450.3,
+                "recommended": false,
+                "type": 56,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HAS_56_19_5_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 400.1,
+                "recommended": false,
+                "type": 56,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HAS_56_19_6_1_1_1_0_0_0_0",
+                "parent": "HAS",
+                "price": 421.1,
+                "recommended": false,
+                "type": 56,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HMO_34_11_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 493,
+                "recommended": false,
+                "type": 34,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HMO_34_11_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 518.9,
+                "recommended": false,
+                "type": 34,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HMO_34_13_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 482,
+                "recommended": false,
+                "type": 34,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HMO_34_13_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 507.3,
+                "recommended": false,
+                "type": 34,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HMO_34_15_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 454.2,
+                "recommended": false,
+                "type": 34,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HMO_34_15_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 478.1,
+                "recommended": false,
+                "type": 34,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HMO_34_17_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 426.5,
+                "recommended": false,
+                "type": 34,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HMO_34_17_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 448.9,
+                "recommended": false,
+                "type": 34,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HMO_34_18_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 398.9,
+                "recommended": false,
+                "type": 34,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HMO_34_18_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 419.8,
+                "recommended": false,
+                "type": 34,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HMO_34_19_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 371.1,
+                "recommended": false,
+                "type": 34,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HMO_34_19_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 390.6,
+                "recommended": false,
+                "type": 34,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HMO_35_11_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 493,
+                "recommended": false,
+                "type": 35,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HMO_35_11_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 518.9,
+                "recommended": false,
+                "type": 35,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HMO_35_13_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 482,
+                "recommended": false,
+                "type": 35,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HMO_35_13_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 507.3,
+                "recommended": false,
+                "type": 35,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HMO_35_15_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 454.2,
+                "recommended": false,
+                "type": 35,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HMO_35_15_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 478.1,
+                "recommended": false,
+                "type": 35,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HMO_35_17_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 426.5,
+                "recommended": false,
+                "type": 35,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HMO_35_17_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 448.9,
+                "recommended": false,
+                "type": 35,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HMO_35_18_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 398.9,
+                "recommended": false,
+                "type": 35,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HMO_35_18_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 419.8,
+                "recommended": false,
+                "type": 35,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HMO_35_19_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 371.1,
+                "recommended": false,
+                "type": 35,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HMO_35_19_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 390.6,
+                "recommended": false,
+                "type": 35,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HMO_37_11_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 493,
+                "recommended": false,
+                "type": 37,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HMO_37_11_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 518.9,
+                "recommended": false,
+                "type": 37,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HMO_37_13_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 482,
+                "recommended": false,
+                "type": 37,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HMO_37_13_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 507.3,
+                "recommended": false,
+                "type": 37,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HMO_37_15_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 454.2,
+                "recommended": false,
+                "type": 37,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HMO_37_15_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 478.1,
+                "recommended": false,
+                "type": 37,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HMO_37_17_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 426.5,
+                "recommended": false,
+                "type": 37,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HMO_37_17_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 448.9,
+                "recommended": false,
+                "type": 37,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HMO_37_18_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 398.9,
+                "recommended": false,
+                "type": 37,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HMO_37_18_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 419.8,
+                "recommended": false,
+                "type": 37,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HMO_37_19_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 371.1,
+                "recommended": false,
+                "type": 37,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HMO_37_19_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 390.6,
+                "recommended": false,
+                "type": 37,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HMO_57_11_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 493,
+                "recommended": false,
+                "type": 57,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HMO_57_11_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 518.9,
+                "recommended": false,
+                "type": 57,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HMO_57_13_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 482,
+                "recommended": false,
+                "type": 57,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HMO_57_13_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 507.3,
+                "recommended": false,
+                "type": 57,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HMO_57_15_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 454.2,
+                "recommended": false,
+                "type": 57,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HMO_57_15_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 478.1,
+                "recommended": false,
+                "type": 57,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HMO_57_17_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 426.5,
+                "recommended": false,
+                "type": 57,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HMO_57_17_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 448.9,
+                "recommended": false,
+                "type": 57,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HMO_57_18_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 398.9,
+                "recommended": false,
+                "type": 57,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HMO_57_18_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 419.8,
+                "recommended": false,
+                "type": 57,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HMO_57_19_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 371.1,
+                "recommended": false,
+                "type": 57,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HMO_57_19_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 390.6,
+                "recommended": false,
+                "type": 57,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HMO_63_11_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 493,
+                "recommended": false,
+                "type": 63,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "HMO_63_11_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 518.9,
+                "recommended": false,
+                "type": 63,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HMO_63_13_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 482,
+                "recommended": false,
+                "type": 63,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "HMO_63_13_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 507.3,
+                "recommended": false,
+                "type": 63,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HMO_63_15_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 454.2,
+                "recommended": false,
+                "type": 63,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "HMO_63_15_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 478.1,
+                "recommended": false,
+                "type": 63,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HMO_63_17_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 426.5,
+                "recommended": false,
+                "type": 63,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "HMO_63_17_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 448.9,
+                "recommended": false,
+                "type": 63,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HMO_63_18_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 398.9,
+                "recommended": false,
+                "type": 63,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "HMO_63_18_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 419.8,
+                "recommended": false,
+                "type": 63,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HMO_63_19_5_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 371.1,
+                "recommended": false,
+                "type": 63,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "HMO_63_19_6_1_1_1_0_0_0_0",
+                "parent": "HMO",
+                "price": 390.6,
+                "recommended": false,
+                "type": 63,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "TEL_55_11_5_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 527.8,
+                "recommended": false,
+                "type": 55,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "TEL_55_11_6_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 555.5,
+                "recommended": false,
+                "type": 55,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "TEL_55_13_5_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 516.8,
+                "recommended": false,
+                "type": 55,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "TEL_55_13_6_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 544,
+                "recommended": false,
+                "type": 55,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "TEL_55_15_5_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 489,
+                "recommended": false,
+                "type": 55,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "TEL_55_15_6_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 514.7,
+                "recommended": false,
+                "type": 55,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "TEL_55_17_5_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 461.3,
+                "recommended": false,
+                "type": 55,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "TEL_55_17_6_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 485.5,
+                "recommended": false,
+                "type": 55,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "TEL_55_18_5_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 433.6,
+                "recommended": false,
+                "type": 55,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "TEL_55_18_6_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 456.4,
+                "recommended": false,
+                "type": 55,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "TEL_55_19_5_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 405.9,
+                "recommended": false,
+                "type": 55,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "TEL_55_19_6_1_1_1_0_0_0_0",
+                "parent": "TEL",
+                "price": 427.2,
+                "recommended": false,
+                "type": 55,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "SMC_62_11_5_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 475.6,
+                "recommended": false,
+                "type": 62,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 11,
+                "id": "SMC_62_11_6_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 500.6,
+                "recommended": false,
+                "type": 62,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "SMC_62_13_5_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 464.6,
+                "recommended": false,
+                "type": 62,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 13,
+                "id": "SMC_62_13_6_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 489,
+                "recommended": false,
+                "type": 62,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "SMC_62_15_5_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 436.9,
+                "recommended": false,
+                "type": 62,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 15,
+                "id": "SMC_62_15_6_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 459.8,
+                "recommended": false,
+                "type": 62,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "SMC_62_17_5_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 409.1,
+                "recommended": false,
+                "type": 62,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 17,
+                "id": "SMC_62_17_6_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 430.6,
+                "recommended": false,
+                "type": 62,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "SMC_62_18_5_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 381.5,
+                "recommended": false,
+                "type": 62,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 18,
+                "id": "SMC_62_18_6_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 401.5,
+                "recommended": false,
+                "type": 62,
+                "variant": 6,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "SMC_62_19_5_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 353.7,
+                "recommended": true,
+                "type": 62,
+                "variant": 5,
+                "year": 2022
+              },
+              {
+                "category": 19,
+                "id": "SMC_62_19_6_1_1_1_0_0_0_0",
+                "parent": "SMC",
+                "price": 372.3,
+                "recommended": false,
+                "type": 62,
+                "variant": 6,
+                "year": 2022
+              }
+            ]
+          },
+          "vvg": {
+            "options": [
+              {
+                "id": 1,
+                "optionPosition": 1,
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 2,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 2,
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 2,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 1,
+                "parents": [
+                  "HPV_27_202",
+                  "PRV_28_202",
+                  "FLX_29_203",
+                  "FLX_29_204"
+                ],
+                "productGroup": 3,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 2,
+                "parents": [
+                  "HPV_27_202",
+                  "PRV_28_202",
+                  "FLX_29_203",
+                  "FLX_29_204"
+                ],
+                "productGroup": 3,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 3,
+                "parents": [
+                  "HPV_27_202",
+                  "PRV_28_202",
+                  "FLX_29_203",
+                  "FLX_29_204"
+                ],
+                "productGroup": 3,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 1,
+                "parents": [
+                  "ZHN_30_205",
+                  "ZHN_30_206"
+                ],
+                "productGroup": 4,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 2,
+                "parents": [
+                  "ZHN_30_205",
+                  "ZHN_30_206"
+                ],
+                "productGroup": 4,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 3,
+                "parents": [
+                  "ZHN_30_205",
+                  "ZHN_30_206"
+                ],
+                "productGroup": 4,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 1,
+                "parents": [
+                  "UTI_24_123",
+                  "UTI_24_124",
+                  "UTI_24_126",
+                  "UTI_24_129",
+                  "UTI_24_130",
+                  "UTI_24_131",
+                  "UTI_24_132",
+                  "UTI_24_133",
+                  "UTI_24_134",
+                  "UTI_24_135",
+                  "UTI_24_136",
+                  "UTI_24_137",
+                  "UTI_24_138",
+                  "UTI_24_139",
+                  "UTI_24_140",
+                  "UTI_24_141",
+                  "UTI_24_142",
+                  "UTI_24_143",
+                  "UTI_24_144",
+                  "UTI_24_145",
+                  "UTI_24_147",
+                  "UTI_24_148",
+                  "UTI_24_149"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 2,
+                "parents": [
+                  "UTI_24_123",
+                  "UTI_24_124",
+                  "UTI_24_126",
+                  "UTI_24_129",
+                  "UTI_24_130",
+                  "UTI_24_131",
+                  "UTI_24_132",
+                  "UTI_24_133",
+                  "UTI_24_134",
+                  "UTI_24_135",
+                  "UTI_24_136",
+                  "UTI_24_137",
+                  "UTI_24_138",
+                  "UTI_24_139",
+                  "UTI_24_140",
+                  "UTI_24_141",
+                  "UTI_24_142",
+                  "UTI_24_143",
+                  "UTI_24_144",
+                  "UTI_24_145",
+                  "UTI_24_147",
+                  "UTI_24_148",
+                  "UTI_24_149"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 3,
+                "parents": [
+                  "UTI_24_123",
+                  "UTI_24_124",
+                  "UTI_24_126",
+                  "UTI_24_129",
+                  "UTI_24_130",
+                  "UTI_24_131",
+                  "UTI_24_132",
+                  "UTI_24_133",
+                  "UTI_24_134",
+                  "UTI_24_135",
+                  "UTI_24_136",
+                  "UTI_24_137",
+                  "UTI_24_138",
+                  "UTI_24_139",
+                  "UTI_24_140",
+                  "UTI_24_141",
+                  "UTI_24_142",
+                  "UTI_24_143",
+                  "UTI_24_144",
+                  "UTI_24_145",
+                  "UTI_24_147",
+                  "UTI_24_148",
+                  "UTI_24_149"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 1,
+                "parents": [
+                  "ALG_11_60",
+                  "HPV_12_60",
+                  "PRV_13_60",
+                  "FLX_14_65",
+                  "FLX_14_66"
+                ],
+                "productGroup": 6,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 2,
+                "parents": [
+                  "ALG_11_60",
+                  "HPV_12_60",
+                  "PRV_13_60",
+                  "FLX_14_65",
+                  "FLX_14_66"
+                ],
+                "productGroup": 6,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 1,
+                "optionPosition": 3,
+                "parents": [
+                  "ALG_11_60",
+                  "HPV_12_60",
+                  "PRV_13_60",
+                  "FLX_14_65",
+                  "FLX_14_66"
+                ],
+                "productGroup": 6,
+                "recommended": true,
+                "sorting": 0,
+                "value": "-"
+              },
+              {
+                "id": 62,
+                "optionPosition": 3,
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 2,
+                "recommended": true,
+                "sorting": 1,
+                "value": "ohne+Familienrabatt"
+              }
+            ],
+            "productGroups": [
+              {
+                "id": 2,
+                "recommended": true,
+                "sorting": 1,
+                "standalone": true,
+                "value": "Mivita"
+              },
+              {
+                "id": 3,
+                "recommended": false,
+                "sorting": 2,
+                "standalone": false,
+                "value": "Comforta"
+              },
+              {
+                "id": 4,
+                "recommended": false,
+                "sorting": 3,
+                "standalone": false,
+                "value": "Denta"
+              },
+              {
+                "id": 6,
+                "recommended": false,
+                "sorting": 4,
+                "standalone": true,
+                "value": "Spital"
+              },
+              {
+                "id": 5,
+                "recommended": false,
+                "sorting": 5,
+                "standalone": true,
+                "value": "UTI"
+              }
+            ],
+            "products": [
+              {
+                "id": "MIX_26_200",
+                "parents": [],
+                "productGroup": 2,
+                "recommended": true,
+                "sorting": 1,
+                "value": "Reala",
+                "variants": [
+                  22
+                ]
+              },
+              {
+                "id": "ZHN_30_205",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 4,
+                "recommended": true,
+                "sorting": 1,
+                "value": "Denta+Stufe+1",
+                "variants": [
+                  23
+                ]
+              },
+              {
+                "id": "MIX_26_201",
+                "parents": [],
+                "productGroup": 2,
+                "recommended": false,
+                "sorting": 2,
+                "value": "Extensa",
+                "variants": [
+                  22
+                ]
+              },
+              {
+                "id": "ZHN_30_206",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 4,
+                "recommended": false,
+                "sorting": 2,
+                "value": "Denta+Stufe+2",
+                "variants": [
+                  23
+                ]
+              },
+              {
+                "id": "HPV_27_202",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 3,
+                "recommended": false,
+                "sorting": 11,
+                "value": "Com-HP",
+                "variants": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "id": "ALG_11_60",
+                "parents": [],
+                "productGroup": 6,
+                "recommended": false,
+                "sorting": 15,
+                "value": "Spital+AA",
+                "variants": [
+                  15,
+                  16
+                ]
+              },
+              {
+                "id": "PRV_28_202",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 3,
+                "recommended": false,
+                "sorting": 21,
+                "value": "Com-P",
+                "variants": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "id": "UTI_24_123",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 24,
+                "value": "Tod+5'000.--+/+Invalidität+10'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_124",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 25,
+                "value": "Tod+5'000.--+/+Invalidität+50'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "HPV_12_60",
+                "parents": [],
+                "productGroup": 6,
+                "recommended": false,
+                "sorting": 25,
+                "value": "Spital+HP",
+                "variants": [
+                  15,
+                  16
+                ]
+              },
+              {
+                "id": "UTI_24_126",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 27,
+                "value": "Tod+5'000.--+/+Invalidität+100'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_129",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 30,
+                "value": "Tod+10'000.--+/+Invalidität+20'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_130",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 31,
+                "value": "Tod+10'000.--+/+Invalidität+100'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "FLX_29_203",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 3,
+                "recommended": true,
+                "sorting": 32,
+                "value": "Com-Opti+1",
+                "variants": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "id": "UTI_24_131",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 32,
+                "value": "Tod+10'000.--+/+Invalidität+200'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "FLX_29_204",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 3,
+                "recommended": false,
+                "sorting": 33,
+                "value": "Com-Opti+2",
+                "variants": [
+                  20,
+                  21
+                ]
+              },
+              {
+                "id": "UTI_24_132",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 34,
+                "value": "Tod+20'000.--+/+Invalidität+40'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_133",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 35,
+                "value": "Tod+20'000.--+/+Invalidität+60'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "PRV_13_60",
+                "parents": [],
+                "productGroup": 6,
+                "recommended": false,
+                "sorting": 35,
+                "value": "Spital+P",
+                "variants": [
+                  15,
+                  16
+                ]
+              },
+              {
+                "id": "UTI_24_134",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 36,
+                "value": "Tod+20'000.--+/+Invalidität+100'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_135",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 37,
+                "value": "Tod+20'000.--+/+Invalidität+200'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_147",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 38,
+                "value": "Tod+20'000.--+/+Invalidität+300'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_136",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 39,
+                "value": "Tod+30'000.--+/+Invalidität+60'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_137",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 40,
+                "value": "Tod+30'000.--+/+Invalidität+100'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_138",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 41,
+                "value": "Tod+30'000.--+/+Invalidität+200'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "FLX_14_65",
+                "parents": [],
+                "productGroup": 6,
+                "recommended": true,
+                "sorting": 41,
+                "value": "Spital+Opti+1",
+                "variants": [
+                  15,
+                  16
+                ]
+              },
+              {
+                "id": "UTI_24_139",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 42,
+                "value": "Tod+40'000.--+/+Invalidität+80'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "FLX_14_66",
+                "parents": [],
+                "productGroup": 6,
+                "recommended": false,
+                "sorting": 42,
+                "value": "Spital+Opti+2",
+                "variants": [
+                  15,
+                  16
+                ]
+              },
+              {
+                "id": "UTI_24_140",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 43,
+                "value": "Tod+40'000.--+/+Invalidität+150'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_141",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 44,
+                "value": "Tod+40'000.--+/+Invalidität+200'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_142",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 45,
+                "value": "Tod+50'000.--+/+Invalidität+100'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_143",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 46,
+                "value": "Tod+50'000.--+/+Invalidität+150'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_144",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 47,
+                "value": "Tod+50'000.--+/+Invalidität+200'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_148",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 48,
+                "value": "Tod+50'000.--+/+Invalidität+300'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_145",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 49,
+                "value": "Tod+100'000.--+/+Invalidität+200'000.--",
+                "variants": [
+                  3
+                ]
+              },
+              {
+                "id": "UTI_24_149",
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201"
+                ],
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 50,
+                "value": "Tod+100'000.--+/+Invalidität+300'000.--",
+                "variants": [
+                  3
+                ]
+              }
+            ],
+            "variants": [
+              {
+                "id": 22,
+                "productGroup": 2,
+                "recommended": true,
+                "sorting": 1,
+                "value": "Krankheit+und+Unfall"
+              },
+              {
+                "id": 20,
+                "productGroup": 3,
+                "recommended": true,
+                "sorting": 1,
+                "value": "Krankheit+und+Unfall"
+              },
+              {
+                "id": 23,
+                "productGroup": 4,
+                "recommended": true,
+                "sorting": 1,
+                "value": "Krankheit+und+Unfall"
+              },
+              {
+                "id": 16,
+                "productGroup": 6,
+                "recommended": false,
+                "sorting": 1,
+                "value": "mit+Unfall"
+              },
+              {
+                "id": 21,
+                "productGroup": 3,
+                "recommended": false,
+                "sorting": 2,
+                "value": "ohne+Unfall"
+              },
+              {
+                "id": 15,
+                "productGroup": 6,
+                "recommended": true,
+                "sorting": 2,
+                "value": "ohne+Unfall"
+              },
+              {
+                "id": 3,
+                "productGroup": 5,
+                "recommended": false,
+                "sorting": 3,
+                "value": "-"
+              }
+            ],
+            "rebates": [
+              {
+                "id": 0,
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201",
+                  "HPV_27_202",
+                  "PRV_28_202",
+                  "FLX_29_203",
+                  "FLX_29_204",
+                  "ZHN_30_205",
+                  "ZHN_30_206",
+                  "UTI_24_123",
+                  "UTI_24_124",
+                  "UTI_24_126",
+                  "UTI_24_129",
+                  "UTI_24_130",
+                  "UTI_24_131",
+                  "UTI_24_132",
+                  "UTI_24_133",
+                  "UTI_24_134",
+                  "UTI_24_135",
+                  "UTI_24_136",
+                  "UTI_24_137",
+                  "UTI_24_138",
+                  "UTI_24_139",
+                  "UTI_24_140",
+                  "UTI_24_141",
+                  "UTI_24_142",
+                  "UTI_24_143",
+                  "UTI_24_144",
+                  "UTI_24_145",
+                  "UTI_24_147",
+                  "UTI_24_148",
+                  "UTI_24_149",
+                  "ALG_11_60",
+                  "HPV_12_60",
+                  "PRV_13_60",
+                  "FLX_14_65",
+                  "FLX_14_66"
+                ],
+                "productGroups": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "rebatePosition": 1,
+                "recommended": true,
+                "value": "Keine"
+              },
+              {
+                "id": 190,
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201",
+                  "HPV_27_202",
+                  "PRV_28_202",
+                  "FLX_29_203",
+                  "FLX_29_204",
+                  "ALG_11_60",
+                  "HPV_12_60",
+                  "PRV_13_60",
+                  "FLX_14_65",
+                  "FLX_14_66"
+                ],
+                "productGroups": [
+                  2,
+                  3,
+                  6
+                ],
+                "rebatePosition": 1,
+                "recommended": false,
+                "value": "Mehrjahresvertragsrabatt+3+Jr"
+              },
+              {
+                "id": 193,
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201",
+                  "HPV_27_202",
+                  "PRV_28_202",
+                  "FLX_29_203",
+                  "FLX_29_204",
+                  "ALG_11_60",
+                  "HPV_12_60",
+                  "PRV_13_60",
+                  "FLX_14_65",
+                  "FLX_14_66"
+                ],
+                "productGroups": [
+                  2,
+                  3,
+                  6
+                ],
+                "rebatePosition": 2,
+                "recommended": true,
+                "value": "Rabatt+SmartCare"
+              },
+              {
+                "id": 0,
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201",
+                  "HPV_27_202",
+                  "PRV_28_202",
+                  "FLX_29_203",
+                  "FLX_29_204",
+                  "ZHN_30_205",
+                  "ZHN_30_206",
+                  "UTI_24_123",
+                  "UTI_24_124",
+                  "UTI_24_126",
+                  "UTI_24_129",
+                  "UTI_24_130",
+                  "UTI_24_131",
+                  "UTI_24_132",
+                  "UTI_24_133",
+                  "UTI_24_134",
+                  "UTI_24_135",
+                  "UTI_24_136",
+                  "UTI_24_137",
+                  "UTI_24_138",
+                  "UTI_24_139",
+                  "UTI_24_140",
+                  "UTI_24_141",
+                  "UTI_24_142",
+                  "UTI_24_143",
+                  "UTI_24_144",
+                  "UTI_24_145",
+                  "UTI_24_147",
+                  "UTI_24_148",
+                  "UTI_24_149",
+                  "ALG_11_60",
+                  "HPV_12_60",
+                  "PRV_13_60",
+                  "FLX_14_65",
+                  "FLX_14_66"
+                ],
+                "productGroups": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "rebatePosition": 3,
+                "recommended": true,
+                "value": "Keine"
+              },
+              {
+                "id": 0,
+                "parents": [
+                  "MIX_26_200",
+                  "MIX_26_201",
+                  "HPV_27_202",
+                  "PRV_28_202",
+                  "FLX_29_203",
+                  "FLX_29_204",
+                  "ZHN_30_205",
+                  "ZHN_30_206",
+                  "UTI_24_123",
+                  "UTI_24_124",
+                  "UTI_24_126",
+                  "UTI_24_129",
+                  "UTI_24_130",
+                  "UTI_24_131",
+                  "UTI_24_132",
+                  "UTI_24_133",
+                  "UTI_24_134",
+                  "UTI_24_135",
+                  "UTI_24_136",
+                  "UTI_24_137",
+                  "UTI_24_138",
+                  "UTI_24_139",
+                  "UTI_24_140",
+                  "UTI_24_141",
+                  "UTI_24_142",
+                  "UTI_24_143",
+                  "UTI_24_144",
+                  "UTI_24_145",
+                  "UTI_24_147",
+                  "UTI_24_148",
+                  "UTI_24_149",
+                  "ALG_11_60",
+                  "HPV_12_60",
+                  "PRV_13_60",
+                  "FLX_14_65",
+                  "FLX_14_66"
+                ],
+                "productGroups": [
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ],
+                "rebatePosition": 4,
+                "recommended": true,
+                "value": "Keine"
+              },
+              {
+                "id": 0,
+                "parents": [
+                  "ZHN_30_205",
+                  "ZHN_30_206",
+                  "UTI_24_123",
+                  "UTI_24_124",
+                  "UTI_24_126",
+                  "UTI_24_129",
+                  "UTI_24_130",
+                  "UTI_24_131",
+                  "UTI_24_132",
+                  "UTI_24_133",
+                  "UTI_24_134",
+                  "UTI_24_135",
+                  "UTI_24_136",
+                  "UTI_24_137",
+                  "UTI_24_138",
+                  "UTI_24_139",
+                  "UTI_24_140",
+                  "UTI_24_141",
+                  "UTI_24_142",
+                  "UTI_24_143",
+                  "UTI_24_144",
+                  "UTI_24_145",
+                  "UTI_24_147",
+                  "UTI_24_148",
+                  "UTI_24_149"
+                ],
+                "productGroups": [
+                  4,
+                  5
+                ],
+                "rebatePosition": 2,
+                "recommended": true,
+                "value": "Keine"
+              }
+            ],
+            "tariffs": [
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "MIX_26_200_22_1_1_62_0_193_0_0",
+                "parent": "MIX_26_200",
+                "price": 25.65,
+                "recommended": true,
+                "variant": 22,
+                "year": 2022
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "MIX_26_200_22_1_1_62_190_193_0_0",
+                "parent": "MIX_26_200",
+                "price": 25.15,
+                "recommended": false,
+                "variant": 22,
+                "year": 2022
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "MIX_26_201_22_1_1_62_0_193_0_0",
+                "parent": "MIX_26_201",
+                "price": 43.8,
+                "recommended": false,
+                "variant": 22,
+                "year": 2022
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "MIX_26_201_22_1_1_62_190_193_0_0",
+                "parent": "MIX_26_201",
+                "price": 42.95,
+                "recommended": false,
+                "variant": 22,
+                "year": 2022
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "HPV_27_202_20_1_1_1_0_193_0_0",
+                "parent": "HPV_27_202",
+                "price": 82.2,
+                "recommended": false,
+                "variant": 20,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "HPV_27_202_20_1_1_1_190_193_0_0",
+                "parent": "HPV_27_202",
+                "price": 80.5,
+                "recommended": false,
+                "variant": 20,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "HPV_27_202_21_1_1_1_0_193_0_0",
+                "parent": "HPV_27_202",
+                "price": 77.25,
+                "recommended": false,
+                "variant": 21,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "HPV_27_202_21_1_1_1_190_193_0_0",
+                "parent": "HPV_27_202",
+                "price": 75.65,
+                "recommended": false,
+                "variant": 21,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "PRV_28_202_20_1_1_1_0_193_0_0",
+                "parent": "PRV_28_202",
+                "price": 171.1,
+                "recommended": false,
+                "variant": 20,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "PRV_28_202_20_1_1_1_190_193_0_0",
+                "parent": "PRV_28_202",
+                "price": 167.7,
+                "recommended": false,
+                "variant": 20,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "PRV_28_202_21_1_1_1_0_193_0_0",
+                "parent": "PRV_28_202",
+                "price": 160.85,
+                "recommended": false,
+                "variant": 21,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "PRV_28_202_21_1_1_1_190_193_0_0",
+                "parent": "PRV_28_202",
+                "price": 157.6,
+                "recommended": false,
+                "variant": 21,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "FLX_29_203_20_1_1_1_0_193_0_0",
+                "parent": "FLX_29_203",
+                "price": 37.35,
+                "recommended": true,
+                "variant": 20,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "FLX_29_203_20_1_1_1_190_193_0_0",
+                "parent": "FLX_29_203",
+                "price": 36.6,
+                "recommended": false,
+                "variant": 20,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "FLX_29_203_21_1_1_1_0_193_0_0",
+                "parent": "FLX_29_203",
+                "price": 35.05,
+                "recommended": false,
+                "variant": 21,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "FLX_29_203_21_1_1_1_190_193_0_0",
+                "parent": "FLX_29_203",
+                "price": 34.35,
+                "recommended": false,
+                "variant": 21,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "FLX_29_204_20_1_1_1_0_193_0_0",
+                "parent": "FLX_29_204",
+                "price": 62.7,
+                "recommended": false,
+                "variant": 20,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "FLX_29_204_20_1_1_1_190_193_0_0",
+                "parent": "FLX_29_204",
+                "price": 61.45,
+                "recommended": false,
+                "variant": 20,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "FLX_29_204_21_1_1_1_0_193_0_0",
+                "parent": "FLX_29_204",
+                "price": 59,
+                "recommended": false,
+                "variant": 21,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "FLX_29_204_21_1_1_1_190_193_0_0",
+                "parent": "FLX_29_204",
+                "price": 57.8,
+                "recommended": false,
+                "variant": 21,
+                "year": 2019
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "ZHN_30_205_23_1_1_1_0_0_0_0",
+                "parent": "ZHN_30_205",
+                "price": 16.3,
+                "recommended": true,
+                "variant": 23,
+                "year": 2022
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "ZHN_30_206_23_1_1_1_0_0_0_0",
+                "parent": "ZHN_30_206",
+                "price": 24.7,
+                "recommended": false,
+                "variant": 23,
+                "year": 2022
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_123_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_123",
+                "price": 0.95,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_124_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_124",
+                "price": 3.5,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_126_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_126",
+                "price": 6.7,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_129_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_129",
+                "price": 1.85,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_130_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_130",
+                "price": 7,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_131_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_131",
+                "price": 13.4,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_132_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_132",
+                "price": 3.75,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_133_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_133",
+                "price": 5,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_134_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_134",
+                "price": 7.6,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_135_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_135",
+                "price": 14,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_136_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_136",
+                "price": 5.6,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_137_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_137",
+                "price": 8.15,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_138_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_138",
+                "price": 14.6,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_139_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_139",
+                "price": 7.45,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_140_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_140",
+                "price": 11.95,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_141_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_141",
+                "price": 15.15,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_142_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_142",
+                "price": 9.35,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_143_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_143",
+                "price": 12.55,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_144_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_144",
+                "price": 15.75,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_145_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_145",
+                "price": 18.65,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_147_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_147",
+                "price": 20.55,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_148_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_148",
+                "price": 22.45,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": false,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "UTI_24_149_3_1_1_1_0_0_0_0",
+                "parent": "UTI_24_149",
+                "price": 25.65,
+                "recommended": false,
+                "variant": 3,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "ALG_11_60_15_1_1_1_0_193_0_0",
+                "parent": "ALG_11_60",
+                "price": 3.15,
+                "recommended": false,
+                "variant": 15,
+                "year": 2016
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "ALG_11_60_15_1_1_1_190_193_0_0",
+                "parent": "ALG_11_60",
+                "price": 3.1,
+                "recommended": false,
+                "variant": 15,
+                "year": 2016
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "ALG_11_60_16_1_1_1_0_193_0_0",
+                "parent": "ALG_11_60",
+                "price": 3.35,
+                "recommended": false,
+                "variant": 16,
+                "year": 2016
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "ALG_11_60_16_1_1_1_190_193_0_0",
+                "parent": "ALG_11_60",
+                "price": 3.3,
+                "recommended": false,
+                "variant": 16,
+                "year": 2016
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "HPV_12_60_15_1_1_1_0_193_0_0",
+                "parent": "HPV_12_60",
+                "price": 69.65,
+                "recommended": false,
+                "variant": 15,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "HPV_12_60_15_1_1_1_190_193_0_0",
+                "parent": "HPV_12_60",
+                "price": 68.25,
+                "recommended": false,
+                "variant": 15,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "HPV_12_60_16_1_1_1_0_193_0_0",
+                "parent": "HPV_12_60",
+                "price": 74.1,
+                "recommended": false,
+                "variant": 16,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "HPV_12_60_16_1_1_1_190_193_0_0",
+                "parent": "HPV_12_60",
+                "price": 72.65,
+                "recommended": false,
+                "variant": 16,
+                "year": 2019
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "PRV_13_60_15_1_1_1_0_193_0_0",
+                "parent": "PRV_13_60",
+                "price": 169.5,
+                "recommended": false,
+                "variant": 15,
+                "year": 2015
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "PRV_13_60_15_1_1_1_190_193_0_0",
+                "parent": "PRV_13_60",
+                "price": 166.1,
+                "recommended": false,
+                "variant": 15,
+                "year": 2015
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "PRV_13_60_16_1_1_1_0_193_0_0",
+                "parent": "PRV_13_60",
+                "price": 180.3,
+                "recommended": false,
+                "variant": 16,
+                "year": 2015
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "PRV_13_60_16_1_1_1_190_193_0_0",
+                "parent": "PRV_13_60",
+                "price": 176.7,
+                "recommended": false,
+                "variant": 16,
+                "year": 2015
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "FLX_14_65_15_1_1_1_0_193_0_0",
+                "parent": "FLX_14_65",
+                "price": 36.5,
+                "recommended": true,
+                "variant": 15,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "FLX_14_65_15_1_1_1_190_193_0_0",
+                "parent": "FLX_14_65",
+                "price": 35.75,
+                "recommended": false,
+                "variant": 15,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "FLX_14_65_16_1_1_1_0_193_0_0",
+                "parent": "FLX_14_65",
+                "price": 38.75,
+                "recommended": false,
+                "variant": 16,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "FLX_14_65_16_1_1_1_190_193_0_0",
+                "parent": "FLX_14_65",
+                "price": 38,
+                "recommended": false,
+                "variant": 16,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "FLX_14_66_15_1_1_1_0_193_0_0",
+                "parent": "FLX_14_66",
+                "price": 53,
+                "recommended": false,
+                "variant": 15,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "FLX_14_66_15_1_1_1_190_193_0_0",
+                "parent": "FLX_14_66",
+                "price": 51.95,
+                "recommended": false,
+                "variant": 15,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 1,
+                "familyRebate": false,
+                "id": "FLX_14_66_16_1_1_1_0_193_0_0",
+                "parent": "FLX_14_66",
+                "price": 56.45,
+                "recommended": false,
+                "variant": 16,
+                "year": 2017
+              },
+              {
+                "combinationRebate": true,
+                "duration": 3,
+                "familyRebate": false,
+                "id": "FLX_14_66_16_1_1_1_190_193_0_0",
+                "parent": "FLX_14_66",
+                "price": 55.3,
+                "recommended": false,
+                "variant": 16,
+                "year": 2017
+              }
+            ]
+          }
+        },
+        "90a21272-80f7-4912-97f1-f92a9bee794e": {
+          "okp": [],
+          "vvg": []
+        }
+      },
+      "basket": {
+        "13e4fd78-0987-4db3-a419-e7d817d98aea": {
+          "okp": [
+            {
+              "option": "1",
+              "franchise": "2500",
+              "accidentIncluded": "0",
+              "product": "SMC",
+              "gatekeeper": false,
+              "tariff": "SMC_62_19_5_1_1_1_0_0_0_0",
+              "type": "OKP",
+              "zsr": "",
+              "category": 19,
+              "price": 353.7,
+              "recommended": true,
+              "variant": 5,
+              "year": 2022
+            }
+          ],
+          "vvg": []
+        },
+        "90a21272-80f7-4912-97f1-f92a9bee794e": {
+          "okp": [],
+          "vvg": []
+        }
+      }
+    }
+  }
+}
+

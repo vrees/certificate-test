@@ -1,0 +1,10 @@
+GET {{protocol}}{{host}}/{{path}}//load/?token=39397589cc3d1f1c33943245aa058f713224b40df30969
+Accept: application/json, text/plain, */*
+Authorization: Basic {{username-test}} {{password-test}}
+
+###
+https://praemienrechner-vvg-test.atupri.ch/ajax/load/?token=39397589cc3d1f1c33943245aa058f713224b40df30969
+Accept: application/json, text/plain, */*
+Authorization: Basic {{username-test}} {{password-test}}
+
+###

@@ -1,0 +1,8 @@
+GET https://webapps.atupri.ch/services/secon.svc/GetProviderList?RADIUS=20&PLZ=3018&ORT=Bern&GEMEINDE_ID=351&MODEL=HMO&COVERBEGINN=2017-06-01
+
+###
+GET https://praemienrechner-vvg-test.atupri.ch/ajax/proxy/getproviderlist?RADIUS=10&PLZ=4051&ORT=Basel&GEMEINDE_ID=2701&COVERBEGINN=2022-02-01
+Authorization: Basic {{username-test}} {{password-test}}
+
+
+###

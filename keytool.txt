@@ -1,0 +1,1 @@
+keytool -importcert -alias "selfsigned.wildcard.atuprinet.ch" -trustcacerts -keystore "$JAVA_HOME/lib/security/cacerts" -file /usr/local/share/ca-certificates/selfsigned.wildcard.atuprinet.ch.crt -storepass changeit -noprompt
