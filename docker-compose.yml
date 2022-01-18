@@ -1,0 +1,44 @@
+version: '3.7'
+services:
+
+  traefik:
+    image: "traefik:v2.5"
+    container_name: "traefik"
+    restart: unless-stopped
+    command:
+      - "--entrypoints.web.address=:80"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--log.level=DEBUG"
+    ports:
+      - "80:80"
+      - "443:443"
+      - "8080:8080"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "./traefik.yml:/etc/traefik/traefik.yml"
+      - "./dynamic.yml:/etc/traefik/dynamic/traefik.yml"
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=myatupri_api_user
+      - POSTGRES_PASSWORD=myatupri_api
+      - POSTGRES_DB=myatupri_api
+    ports:
+      - "5432:5432"
+    volumes:
+      - /home/vrees/IOTstack/volumes/postgres/data:/var/lib/postgresql/data
+
+  portainer-ce:
+    container_name: portainer-ce
+    image: portainer/portainer-ce
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+      - "9000:9000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /home/vrees/IOTstack/volumes/portainer-ce/data:/data

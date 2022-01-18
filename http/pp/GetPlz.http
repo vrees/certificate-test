@@ -12,6 +12,14 @@ GET https://webapps.atupri.ch/Services/Secon.svc/GetPlz?PraemienJahr=2017&PLZ=56
 GET https://com1-int.atupri.ch:9980/services/secon.svc/GetPlz?praemienjahr=2017&plz=5600&mode=1
 # SSH: Nur mit gültigen Unic-Credentials und über Unic-VPN - kann ich nicht testen
 
-###
+### esb
 GET https://srvscs1-test.atupri.ch:9960/communities/v1?year=2017&zip=5600&mode=1
 
+### via traefik
+GET https://localhost/api-esb/communities/v1?year=2017&zip=5600&mode=1
+
+###
+GET http://localhost/foo
+
+###
+GET https://srvscs1-test.atupri.ch:8900/document/9960

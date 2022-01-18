@@ -1,0 +1,43 @@
+http:
+  services:
+    react:
+      loadBalancer:
+        servers:
+          - url: "http://localhost:3005/"
+    esb:
+      loadBalancer:
+        servers:
+          - url: "https://srvscs1-test.atupri.ch:9960/"
+
+  routers:
+    router-react:
+      rule: "Path(`/foo`)"
+      service: "react"
+    router-api-esb:
+      rule: "Host(`localhost`) && Path(`/api-esb`)"
+      service: "esb"
+      tls: {}
+
+// dashboard ???
+        - "traefik.enable=true"
+        - "traefik.http.routers.traefik.rule=Host(`srvdsw1-local.atuprinet.ch`)"
+        - "traefik.http.routers.traefik.service=api@internal"
+        - "traefik.http.routers.traefik.entrypoints=web-secured"
+        - "traefik.http.services.dummy-internal-service.loadbalancer.server.port=4242" # required by swarm but not used. https://github.com/containous/traefik/issues/5732 https://github.com/containous/traefik/issues/5732
+        - "traefik.http.routers.traefik.tls=true"
+
+
+#          - "traefik.enable=true"
+#          - "traefik.http.routers.myatupri-api.entrypoints=web"
+#          - "traefik.http.routers.myatupri-api.rule=Host(${HOSTS})"
+#          - "traefik.http.middlewares.myatupri-api-https-redirect.redirectscheme.scheme=https"
+#          - "traefik.http.routers.myatupri-api.middlewares=myatupri-api-https-redirect"
+#          - "traefik.http.routers.myatupri-api-secure.entrypoints=web-secured"
+#          - "traefik.http.routers.myatupri-api-secure.rule=Host(${HOSTS})"
+#          - "traefik.http.routers.myatupri-api-secure.tls=true"
+#          - "traefik.http.routers.myatupri-api-secure.service=myatupri-api"
+#          - "traefik.http.services.myatupri-api.loadbalancer.server.port=9090"
+#          - "traefik.http.services.myatupri-api.loadbalancer.sticky.cookie.name=traefik-cookie"
+#          - "traefik.http.services.myatupri-api.loadbalancer.sticky.cookie=true"
+#          - "traefik.http.services.myatupri-api.loadbalancer.sticky.cookie.httponly=true"
+#          - "traefik.docker.network=traefik"

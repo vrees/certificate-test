@@ -7,3 +7,9 @@ Authorization: Basic {{username-test}} {{password-test}}
 ###
 GET https://praemienrechner-vvg-test.atupri.ch/ajax/proxy/getvvgtarif?birthDate=1980-08-08&postalCode=4051&city=Basel&communityId=2701&gender=m&coverBegin=2022-02-01&language=de&residencePermit=&okp=NONE&mode=1
 Authorization: Basic {{username-test}} {{password-test}}
+
+### vvg über ESB 9960
+GET https://srvscs1-test.atupri.ch:9960/tariffs/v1/vvg?birthDate=1980-08-08&postalCode=4051&city=Basel&communityId=2701&gender=m&coverBegin=2022-02-01&language=de&residencePermit=&okp=NONE&mode=1
+
+### okp über ESB 9960
+GET https://srvscs1-test.atupri.ch:9960/tariffs/v1/okp?birthDate=1980-08-08&postalCode=4051&city=Basel&communityId=2701&gender=m&coverBegin=2022-02-01&language=de&mode=1
