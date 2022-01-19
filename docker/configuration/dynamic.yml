@@ -1,0 +1,46 @@
+
+http:
+  routers:
+    frontend:
+      rule: "Host(`localhost/foo`)"
+      service: frontend
+      entryPoints:
+        - "web"
+
+    backend:
+      rule: "Host(`localhost/api/`)"
+      service: backend
+      entryPoints:
+        - "web"
+#      middlewares:
+#        - "redirectscheme-atu"
+
+    esb:
+      rule: "Host(`192.168.178.180/api-esb/`)"
+      service: esb
+      entryPoints:
+        - "web"
+      tls: {}
+      middlewares:
+        - "redirectscheme-esb"
+
+  services:
+    frontend:
+      loadBalancer:
+        servers:
+          - url: http://localhost:3005/
+    backend:
+      loadBalancer:
+        servers:
+          - url: http://localhost:8081/
+    esb:
+      loadBalancer:
+        servers:
+          - url: https://srvscs1-test.atupri.ch:9960/
+
+
+  middlewares:
+    redirectscheme-esb:
+      redirectScheme:
+        scheme: https
+        permanent: true

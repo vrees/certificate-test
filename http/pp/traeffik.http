@@ -1,0 +1,17 @@
+### esb
+GET https://srvscs1-test.atupri.ch:9960/communities/v1?year=2017&zip=5600&mode=1
+
+### --> https://srvscs1-test.atupri.ch:9960
+GET http://localhost/api-esb/communities/v1?year=2017&zip=5600&mode=1
+
+### --> zur neuen SpringBoot App premiumcalculator-api  http://localhost:8081/
+GET http://localhost/api/
+
+### React Frontend -->  http://localhost:3005/
+GET http://localhost/foo
+
+###
+GET http://localhost/api-esb/
+
+###
+GET http://192.168.178.180/api-esb/

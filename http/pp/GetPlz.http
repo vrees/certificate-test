@@ -19,7 +19,7 @@ GET https://srvscs1-test.atupri.ch:9960/communities/v1?year=2017&zip=5600&mode=1
 GET https://localhost/api-esb/communities/v1?year=2017&zip=5600&mode=1
 
 ###
-GET http://localhost/foo
+GET https://srvscs1-test.atupri.ch:8900/document/9960
 
 ###
-GET https://srvscs1-test.atupri.ch:8900/document/9960
+https://com1.atupri.ch:9960/communities/v1

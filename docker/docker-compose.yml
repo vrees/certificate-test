@@ -5,19 +5,32 @@ services:
     image: "traefik:v2.5"
     container_name: "traefik"
     restart: unless-stopped
-    command:
-      - "--entrypoints.web.address=:80"
-      - "--api.insecure=true"
-      - "--providers.docker=true"
-      - "--log.level=DEBUG"
     ports:
       - "80:80"
       - "443:443"
-      - "8080:8080"
+      - "8080:8080" # traefik dashboard
+    command:
+      - --api.insecure=true
+      - --api.dashboard=true
+      - --api.debug=false
+      - --log.level=DEBUG
+      - --providers.docker=true
+      - --providers.docker.swarmMode=true
+      - --providers.docker.exposedbydefault=false
+      - --providers.docker.network=traefik
+      - --entrypoints.web.address=:80
+      - --entrypoints.web-secured.address=:443
+      - --providers.file.directory=/configuration/
+      - --providers.file.watch=true
+
+
+    #          - "traefik.docker.network=traefik"
+    networks:
+      - traefik
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
-      - "./traefik.yml:/etc/traefik/traefik.yml"
-      - "./dynamic.yml:/etc/traefik/dynamic/traefik.yml"
+#      - "./traefik.yml:/etc/traefik/traefik.yml"
+      - "./configuration:/configuration"
 
   postgres:
     container_name: postgres
@@ -42,3 +55,8 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /home/vrees/IOTstack/volumes/portainer-ce/data:/data
+
+networks:
+  traefik:
+#    external: true
+    name: traefik

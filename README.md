@@ -55,5 +55,11 @@ Non-authoritative answer:
 artifactory.atuprinet.ch	canonical name = srvart1-prod.atuprinet.ch.
 Name:	srvart1-prod.atuprinet.ch
 Address: 10.253.27.108
+```
 
+## Docker Stack cammands 
+```
+docker swarm init --advertise-addr  2003:ea:7f1f:9700:742b:5da7:d427:e6d6
+
+docker stack deploy --compose-file docker-compose.yml  traefik-example
 ```

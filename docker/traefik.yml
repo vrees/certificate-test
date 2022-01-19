@@ -2,7 +2,7 @@ global:
   sendAnonymousUsage: false
 providers:
   docker:
-    watch: true
+    watch: false
   file:
     directory: /etc/traefik/dynamic
     watch: true
