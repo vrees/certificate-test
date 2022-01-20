@@ -13,6 +13,8 @@ http:
       service: backend
       entryPoints:
         - "web"
+      middlewares:
+        - "redirectregex-backend"
     esb:
       rule: "Host(`localhost`) && PathPrefix(`/api-esb`)"
       service: esb
@@ -20,14 +22,13 @@ http:
         - "web"
       middlewares:
         - "redirectregex-esb"
+
   services:
     frontend:
       loadBalancer:
         servers:
-#          - url: http://myhost:3005/
-#          - url: http://192.168.178.180:3005
           - url: http://127.0.0.1:3005
-#          - url: http://192.168.178.1:80
+#          - url: http://myhost:3005/
     backend:
       loadBalancer:
         servers:
@@ -41,8 +42,13 @@ http:
     redirectregex-frontend:
       redirectregex:
         regex: "^http://localhost/foo"
-        replacement: "http://myhost:3005"
+        replacement: "http://localhost:3005"
+    redirectregex-backend:
+      redirectregex:
+        regex: "^http://localhost/api"
+        replacement: "http://localhost:8081"
     redirectregex-esb:
       redirectregex:
         regex: "^http://localhost/api-esb"
         replacement: "https://srvscs1-test.atupri.ch:9960"
+
