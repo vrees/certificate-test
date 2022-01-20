@@ -10,8 +10,3 @@ GET http://localhost/api/
 ### React Frontend -->  http://localhost:3005/
 GET http://localhost/foo
 
-###
-GET http://localhost/api-esb/
-
-###
-GET http://192.168.178.180/api-esb/
