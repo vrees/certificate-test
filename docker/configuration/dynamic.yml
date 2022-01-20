@@ -2,33 +2,32 @@
 http:
   routers:
     frontend:
-      rule: "Host(`localhost/foo`)"
+      rule: "Host(`localhost`) && PathPrefix(`/foo`)"
       service: frontend
       entryPoints:
         - "web"
-
+      middlewares:
+        - "redirectregex-frontend"
     backend:
-      rule: "Host(`localhost/api/`)"
+      rule: "Host(`localhost`) && PathPrefix(`/api`)"
       service: backend
       entryPoints:
         - "web"
-#      middlewares:
-#        - "redirectscheme-atu"
-
     esb:
-      rule: "Host(`192.168.178.180/api-esb/`)"
+      rule: "Host(`localhost`) && PathPrefix(`/api-esb`)"
       service: esb
       entryPoints:
         - "web"
-      tls: {}
       middlewares:
-        - "redirectscheme-esb"
-
+        - "redirectregex-esb"
   services:
     frontend:
       loadBalancer:
         servers:
-          - url: http://localhost:3005/
+#          - url: http://myhost:3005/
+#          - url: http://192.168.178.180:3005
+          - url: http://127.0.0.1:3005
+#          - url: http://192.168.178.1:80
     backend:
       loadBalancer:
         servers:
@@ -36,11 +35,14 @@ http:
     esb:
       loadBalancer:
         servers:
-          - url: https://srvscs1-test.atupri.ch:9960/
-
+          - url: srvscs1-test.atupri.ch
 
   middlewares:
-    redirectscheme-esb:
-      redirectScheme:
-        scheme: https
-        permanent: true
+    redirectregex-frontend:
+      redirectregex:
+        regex: "^http://localhost/foo"
+        replacement: "http://myhost:3005"
+    redirectregex-esb:
+      redirectregex:
+        regex: "^http://localhost/api-esb"
+        replacement: "https://srvscs1-test.atupri.ch:9960"
